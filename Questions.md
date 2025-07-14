@@ -186,10 +186,63 @@ public class Solution {
                 String s1=sc.next();
                 int x=sc.nextInt();
                 //Complete this line
+            // %-15s → left justify string in 15 characters
+            // %03d → integer in 3 digits, padded with 0s if needed
             System.out.printf("%-15s%03d\n",s1,x);
             }
             System.out.println("================================");
 
+    }
+}
+
+```
+
+</details>
+
+# 4 # 🔁 Java Loops Challenge — Multiplication Table
+
+## 🎯 Objective
+
+In this challenge, we're going to use **loops** to help us do some simple math.
+
+---
+
+## ✅ Task
+
+Given an integer `N`, print its **first 10 multiples**.  
+Each multiple `i` (where `1 <= i <= 10`) should be printed on a new line in the following format:
+
+# Sample input 
+
+```
+n=2
+```
+# output 
+
+```
+2 X 1 = 2
+2 X 2 = 4
+2 X 3 = 6
+2 X 4 = 8
+2 X 5 = 10
+2 X 6 = 12
+2 X 7 = 14
+2 X 8 = 16
+2 X 9 = 18
+2 X 10 = 20
+
+```
+<details>
+<summary><strong>💀🤷‍♂️</strong></summary>
+
+```java
+
+public class Practice {
+public static void main(String[] args) {
+        int N=2;
+        for (int i=1;i<=10;i++){
+            System.out.println(N+" X "+i+" = "+*i);
+        }
     }
 }
 
