@@ -24,6 +24,17 @@ There are **3 lines of input**, and **each line contains a single integer**.
 
 Print each integer on a **new line**, in the **same order** as the input.
 
+
+## 🧪 Sample Input
+
+```java
+123
+34
+45
+```
+---
+# Output
+
 ```java
 123
 34
@@ -31,7 +42,6 @@ Print each integer on a **new line**, in the **same order** as the input.
 ```
 ---
 
-## 🧪 Sample Input
 
 <details>
 <summary>
