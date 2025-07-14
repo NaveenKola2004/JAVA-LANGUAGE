@@ -9,7 +9,6 @@
 - Example :
        - Naveen ate rice in this morning   
 
-
 ```java
 int number=1;
 char c="A";
