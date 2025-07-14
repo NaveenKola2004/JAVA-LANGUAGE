@@ -48,6 +48,7 @@ Print each integer on a **new line**, in the **same order** as the input.
 <strong>💀🤷‍♂️ANSWER</strong></summary>
 
 </details>
+
 # 2 🧠 Java Conditional Task — "Weird or Not Weird"
 
 ## ✅ Task Description
