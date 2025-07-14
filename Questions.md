@@ -1,4 +1,44 @@
-# 🧠 Java Conditional Task — "Weird or Not Weird"
+# 1🧾 Java Task — Read and Print Integers
+
+## ✅ Task
+
+In this challenge, you must read **3 integers** from standard input (stdin) and then print them to standard output (stdout).  
+Each integer must be printed on a **new line**.
+
+A portion of the code is already provided in the editor — complete it to finish the task.
+
+---
+
+## 📝 Input Format
+
+There are **3 lines of input**, and **each line contains a single integer**.
+
+---
+```java 
+123
+34
+45
+```
+
+## 🖨️ Output Format
+
+Print each integer on a **new line**, in the **same order** as the input.
+
+```java
+123
+34
+45
+```
+---
+
+## 🧪 Sample Input
+
+<details>
+<summary>
+<strong>💀🤷‍♂️ANSWER</strong></summary>
+
+</details>
+# 2 🧠 Java Conditional Task — "Weird or Not Weird"
 
 ## ✅ Task Description
 
@@ -53,3 +93,4 @@ public class Practice {
     }
 }
 ```
+</details>
