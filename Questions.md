@@ -47,6 +47,22 @@ Print each integer on a **new line**, in the **same order** as the input.
 <summary>
 <strong>💀🤷‍♂️ANSWER</strong></summary>
 
+```java
+import java.util.Scanner;
+public class Practice {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        int c=sc.nextInt();
+        System.out.println(a+"\n"+b+"\n"+c);
+        sc.close();
+    }
+}
+
+```
+
 </details>
 
 # 2 🧠 Java Conditional Task — "Weird or Not Weird"
