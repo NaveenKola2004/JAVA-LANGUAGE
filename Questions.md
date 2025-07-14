@@ -121,3 +121,78 @@ public class Practice {
 }
 ```
 </details>
+
+
+
+# 3 # 📚 Java Formatting Challenge — String and Integer Output
+
+## ✅ Task
+
+Every line of input will contain a **String followed by an integer**.
+
+You must print each pair in a specific format:
+
+- The **String** should be **left-justified** in a field of exactly `15` characters.
+- The **Integer** should be **zero-padded** and exactly `3` digits wide.
+
+---
+
+## 📥 Input Format
+
+- Each line of input contains a **String** and an **integer** separated by a space.
+- Each String will contain **no more than 10 alphabetic characters**.
+- Each integer will be in the **inclusive range from 0 to 999**.
+- You will be given **3 lines** of such input.
+
+---
+
+## 📤 Output Format
+
+Your output should look like this:
+
+# 📚 Java Formatting Challenge — String and Integer Output
+
+## 🧪 Sample Input (Table Format)
+
+| String | Integer |
+|--------|---------|
+| java   | 100     |
+| cpp    | 65      |
+| python | 50      |
+
+---
+
+## 🧾 Sample Output (Formatted Table Look)
+
+
+| String | Integer |
+|--------|---------|
+| java   | 100     |
+| cpp    | 065      |
+| python | 050      |
+
+<details>
+<summary><strong>💀🤷‍♂️ANSWER</strong></summary>
+
+```java
+import java.util.Scanner;
+
+public class Solution {
+
+    public static void main(String[] args) {
+            Scanner sc=new Scanner(System.in);
+            System.out.println("================================");
+            for(int i=0;i<3;i++){
+                String s1=sc.next();
+                int x=sc.nextInt();
+                //Complete this line
+            System.out.printf("%-15s%03d\n",s1,x);
+            }
+            System.out.println("================================");
+
+    }
+}
+
+```
+
+</details>
