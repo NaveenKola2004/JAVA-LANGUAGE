@@ -306,3 +306,84 @@ public class Practice {
 
 </details>
 
+# 6 in this print the code even and odd
+
+- Take the two inputs
+- print the odd and evens
+
+# Sample input
+
+```java
+1 2
+```
+
+# Sample output
+
+```java
+1 3 5 7
+2 4 6
+```
+
+<details>
+<summary><strong>💀🤷‍♂️</strong></summary>
+
+```java 
+import java.util.Scanner;
+public class Practice {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int num1=sc.nextInt();
+        int num2=sc.nextInt();
+        for (int i=num1;i<=num2;i++){
+            if(i%2!=0){
+                System.out.print(i+" ");
+            }
+        }
+        System.out.println();
+        for (int i=num1;i<=num2;i++){
+            if(i%2==0){
+                System.out.print(i+" ");
+            }
+        }
+        sc.close();
+    }
+}
+
+```
+</details>
+
+# 7 PRINT THE SUM OF N NATURAL NUMBERS
+
+- Take the input as the number 
+- print the sum of the the number upto the range
+
+# sample input
+
+```java
+4
+```
+
+# sample output
+
+```java
+10   //1+2+3+4
+```
+<details>
+<summary><strong>🤷‍♂️💀ANSWER</strong></summary>
+
+```java
+
+public class Practice {
+
+    public static void main(String[] args) {
+        int num=4;
+        int sum=0;
+        for (int i=1;i<=num;i++){
+            sum=sum+i;
+        }
+        System.out.println(sum);
+    }
+}
+
+```
