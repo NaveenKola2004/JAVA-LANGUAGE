@@ -199,7 +199,7 @@ public class Solution {
 
 </details>
 
-# 4 # 🔁 Java Loops Challenge — Multiplication Table
+# 4  🔁 Java Loops Challenge — Multiplication Table
 
 ## 🎯 Objective
 
@@ -233,7 +233,7 @@ n=2
 
 ```
 <details>
-<summary><strong>💀🤷‍♂️</strong></summary>
+<summary><strong>💀🤷‍♂️ANSWER</strong></summary>
 
 ```java
 
@@ -249,3 +249,60 @@ public static void main(String[] args) {
 ```
 
 </details>
+
+# 5 ## Problem: Java Stdin and Stdout II
+
+### Input Format
+
+There are three lines of input:
+1. The first line contains an integer.
+2. The second line contains a double.
+3. The third line contains a String.
+
+### Output Format
+
+There are three lines of output:
+- On the first line, print `String:` followed by the unaltered String read from stdin.
+- On the second line, print `Double:` followed by the unaltered double read from stdin.
+- On the third line, print `Int:` followed by the unaltered integer read from stdin.
+
+### Sample Input
+
+```java
+42
+3.1415
+Welcome to HackerRank's Java tutorials!
+```
+
+### Sample Output
+```java
+String: Welcome to HackerRank's Java tutorials!
+Double: 3.1415
+Int: 42
+```
+
+<details>
+<summary><strong>💀🤷‍♂️ANSWER</strong></summary>
+
+```java
+import java.util.Scanner;
+public class Practice {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int num=sc.nextInt();
+        double num2=sc.nextDouble();
+        sc.nextLine();
+        String data=sc.nextLine();
+
+        System.out.println("String : "+data);
+        System.out.println("Double : "+num2);
+        System.out.println("Int : "+num);
+        sc.close();
+    }
+}
+
+```
+
+</details>
+
