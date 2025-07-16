@@ -387,3 +387,88 @@ public class Practice {
 }
 
 ```
+
+</details>
+
+# 8 Print the given number is Automorphic Number ot not 
+
+- 5 is automorphic number because 5 X 5=25 the last number is 5 
+- 4 is not automorphic number 4 X 4=16 the lat number is 6
+
+# sample input
+```java 
+5
+```
+
+# sample output
+
+```java
+Automorphic Number
+```
+
+<details>
+<summary><strong>🤷‍♂️💀ANSWER</strong></summary>
+
+```java
+public class Practice {
+
+    public static void main(String[] args) {
+        int num=7;
+        int sq=num*num;
+        if ((sq%10)==num){
+            System.out.println("Automorphic Number");
+        }
+        else{
+            System.out.println("Not Automorphic Number");
+        }
+    }
+}
+
+```
+
+</details>
+
+
+# 9 Print the given number is Harshad number or not
+
+- 12 input 1+2=3 so 12 % 3 it return reminder as 0
+- so that's why it is harshad number
+
+# sample input 
+```java
+12
+```
+# output
+```java
+Harshad Number
+```
+
+<details>
+<summary><strong>🤷‍♂️💀</summary></strong>
+
+```java
+import java.util.Scanner;
+public class Practice {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int num=sc.nextInt();
+        int temp=num;
+        int sum=0;
+        while(num>0){
+            int def =num%10;
+            sum=sum+def;
+            num=num/10;
+        }
+        if (temp%sum==0){
+            System.out.println("Harshad Number");
+        }
+        else{
+            System.out.println("Not Harshad Number");
+        }
+        sc.close();
+    }
+}
+```
+
+</details>
