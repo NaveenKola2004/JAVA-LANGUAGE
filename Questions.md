@@ -509,3 +509,113 @@ public class Practice {
 }
 ```
 </details>
+
+# 11 to find the students who are the attend theh placements in drive 
+
+- The students with 0 arrears with above 7.0 CGPA 
+- The studnets with 1,2 arrears  with above 7.5 CGPA THIS ARE THE Eliglble for placements 
+- Take user input name,roll,CGPA,arrears
+- TWO ints and one float (arrears)
+- And String
+
+# sample input 
+
+```java
+raghu
+78
+7.2
+2
+```
+# sample output
+
+```java
+raghu
+78
+not eligible for placements
+```
+
+<details>
+<summary><strong>💀🤷‍♂️Answer</strong></summary>
+
+```java
+import java.util.Scanner;
+public class patterns {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        String name=sc.nextLine();
+        int roll=sc.nextInt();
+        float cgpa=sc.nextFloat();
+        int arrea=sc.nextInt();
+    if ((arrea==0 & cgpa>=7.0)){
+        System.out.println(name+"\n"+roll+"\nEligible to attend placement");
+    }
+    else if((cgpa>7.5) & (arrea==1||arrea==2)){
+        System.out.println(name+"\n"+roll+"\nEligible to attend placement");
+    }
+    else{
+        System.out.println(name+"\n"+roll+"\nNot Eligible to attend placement");
+    }
+    }
+}
+
+```
+</details>
+
+# 12 Print the follwing information based
+
+- car 1 travelling into 3 roads in that we can get the in which road the car travelled in the road 
+- road1,road2,road3
+- tip is when the lest distance travelled in this win the race 
+- take the user input as the three roads distance 
+- in that print the least distance travelled it is same like in 3 digit number least number
+- it pass the all the test cases it is an example
+
+# sample input 
+
+```java
+123
+43
+24
+```
+
+# sample output
+
+```java
+Car 1 goes into road B
+```
+
+<details>
+<summary><strong>🤷‍♂️💀ANSWER</strong></summary>
+
+```java
+import java.util.Scanner;
+public class patterns {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int road1=sc.nextInt();
+        int road2=sc.nextInt();
+        int road3=sc.nextInt();
+        if (road1<road2){
+            if(road1<road3){
+                System.out.println("Car 1 goes road A");
+            }
+            else{
+                System.out.println("car 1 goes road  B");
+            }
+        }
+        else{
+            if(road2<road3){
+                System.out.println("car 1 goes road B");
+            }
+            else{
+                System.out.println("car 1 goes road C");
+            }
+        }
+        sc.close();
+    }
+}
+
+```
+
+</details>
