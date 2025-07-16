@@ -472,3 +472,40 @@ public class Practice {
 ```
 
 </details>
+
+# 10 Check the person reache thir destination or not
+
+- when a man buy a new car he not check the fuel level and he started to go to the temple in that we display the when he reached the destination or not fuel is thir to that destination display "can reach" or not "can not reach"
+
+# sample input
+- input consists of 1 float and 2 int's
+
+```java
+11
+6
+67
+```
+
+# sample output
+
+```java
+Cannot reach
+```
+<details>
+<summry><strong>🤷‍♂️💀ANSWER</summary></strong>
+
+```java
+import java.util.Scanner;
+public class Practice {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        float millage=sc.nextFloat();
+        int liters=sc.nextInt();
+        int distance=sc.nextInt();
+        System.out.println((millage*liters>=distance)?"can reach":"cannot reach");
+        sc.close();
+    }
+}
+```
+</details>
