@@ -619,3 +619,27 @@ public class patterns {
 ```
 
 </details>
+
+
+# 13 Print the profit and lose of shop seller 
+- when 12 bananna rs is x and 1 bananna rs is y print the when seller selllon the bananna total at amout rs and 1 price also displayed in that we calculate the when the seller is profit,lose,and break even out 
+
+# sample input 
+```java
+60
+4
+```
+
+# sample output
+
+```java
+Lose
+```
+
+<details>
+<summary><strong>🤷‍♂️💀ANSWER</strong></summary>
+
+```java
+
+```
+</details>
