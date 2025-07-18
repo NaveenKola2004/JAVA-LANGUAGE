@@ -7,3 +7,36 @@
 2. Dynamic meaning in java
 
 - Java is considered a dynamic language because of its ability to adapt and modify itself during runtime. This feature allows for greater flexibility in the coding process by enabling developers to update and alter elements of a program without requiring a complete recompilation.
+
+
+# 🔢 Data Type Precedence (Promotion Hierarchy)
+
+> 📚 This hierarchy is based on **widening conversion** or **type promotion** used in languages like Java and C.
+
+## 🧠 Order: Highest to Lowest Precedence
+
+| Rank | Data Type | Description |
+|------|-----------|-------------|
+| 1️⃣   | `double`   | 64-bit floating-point, highest precision |
+| 2️⃣   | `float`    | 32-bit floating-point |
+| 3️⃣   | `long`     | 64-bit integer |
+| 4️⃣   | `int`      | 32-bit integer (default integer type) |
+| 5️⃣   | `char`     | 16-bit Unicode character (acts like int in math ops) |
+| 6️⃣   | `short`    | 16-bit integer |
+| 7️⃣   | `byte`     | 8-bit integer |
+
+---
+
+## ⚠️ Special Note:
+
+- `boolean` is **not** part of this hierarchy — you can’t use it in arithmetic expressions.
+- In mixed expressions, the **lower type automatically gets promoted** to the higher one.
+
+---
+
+## 💡 Example in Java:
+
+```java
+int a = 5;
+double b = 6.7;
+System.out.println(a + b);  // Output: 11.7 (a promoted to double)
