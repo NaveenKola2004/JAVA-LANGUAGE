@@ -26,6 +26,66 @@ Primitive data types are the most basic data types in Java. They are not objects
 
 ---
 
+
+> ### ALL THE DATATYPE NAMES SHOULD BE IN A SMALL LETTERS 👉E XCEPT (String)
+
+# SYNTAX
+#### TO CREATE A DATATYPE
+
+```java
+DATATYPE_NAME  VARIABLE =  VALUE;
+```
+---
+
+### DATA TYPES
+> # 👉 byte  👈
+
+- In Java, byte is a primitive data type that represents an 8-bit signed two's complement integer. It's the smallest integer type, useful for conserving memory in large arrays or when dealing with binary data. A byte can hold values ranging from -128 to 127
+
+---
+
+```java
+byte num1=127;
+byte num2=-128;
+```
+
+> # 🫸 integer 🫷
+
+- Integers are whole numbers, meaning they don't have any decimal or fractional parts. 
+- A data type used to represent whole numbers (positive, negative, or zero) without any fractional or decimal component.
+- Examples include -5, 0, 1, 100, -1000, etc.
+### Example
+
+```java
+int number=1;
+int number2=123456;
+```
+---
+> # 🫸 char 🫷
+
+- characture is used to store the single letter or symbol or number
+
+### Example
+
+```java
+char letter='a';
+char letter1='A';
+char number='2';
+char number1='-2';  -> NOT GIVE LIKE THIS BECAUSE - and 2 are two charactures
+char symbol='@';
+```
+---
+> # 🫸 float 🫷 
+
+- float is used to store the decimal values in and print the decimal values,
+- when we want to get the decimal numbers form the 0,1,2 put the how many decimal points you can assaign the f for  decimal points to print 
+
+```java
+    float n=2.09f; // to get the 2.09
+```
+
+> ##### Short,double-> discuss later
+
 ## 🔹 2. Non-Primitive Data Types (Reference Types)
 
 Non-primitive types are objects and hold references (memory addresses), not actual data.
@@ -39,13 +99,3 @@ Non-primitive types are objects and hold references (memory addresses), not actu
 - `Enum` → `enum Days { MON, TUE, WED };`
 - `Wrapper Classes` → `Integer`, `Double`, `Boolean`, etc.
 
----
-
-## 🔄 Autoboxing and Unboxing
-
-Java allows conversion between primitive and wrapper objects:
-
-```java
-int x = 10;           // primitive
-Integer y = x;        // autoboxing (primitive -> object)
-int z = y;            // unboxing (object -> primitive)
