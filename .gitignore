@@ -1,2 +1,9 @@
-interviewQuestion.md
-interviewQuestion.md
+*.md
+
+!1_Introduction.md
+!2_VARIABLES.md
+!3_Datatypes.md
+!Additional_Infomation.md
+!Questions.md
+!README.md
+!ANSWERS_INTERVIEW.md
