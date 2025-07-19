@@ -1,6 +1,7 @@
 > ## 1. Reverse number 
 
 <details>
+    
 <summary>👉ANSWER</summary>
 
 ```java 
@@ -99,9 +100,10 @@ else:
 > # FIBONACCI NUMBER UP TO THE NUMBER OF DIGITS YOU WANT
 >
 > <details>
-    <summary>👉ANSWER</summary>
 
-    ```java
+<summary>👉ANSWER</summary>
+
+```java
     import java.util.Scanner;
 public class Main{
     public static void main(String[] args){
