@@ -96,7 +96,6 @@ else:
 </details>
 
 ---
-<<<<<<< HEAD
 > ## 4. Generate Fibonacci series  
 
 <details>
@@ -124,33 +123,3 @@ public class quesionspractice {
 ```
 
 </details>
-=======
-
-> # FIBONACCI NUMBER UP TO THE NUMBER OF DIGITS YOU WANT
-
- 
- <details>
-
-<summary>👉ANSWER</summary>
-
-```java
-    import java.util.Scanner;
-public class Main{
-    public static void main(String[] args){
-        Scanner sc=new Scanner(System.in);
-        int num3=sc.nextInt();
-        int num1=0,num2=1;
-        int num4;
-        System.out.print(num1+","+num2);
-        for (int i=2;i<num3;i++){
-            num4=num1+num2;
-            System.out.print(","+num4);
-            num1=num2;
-            num2=num4;
-        }
-    }
-}
-```
-
-</details>
->>>>>>> 26ac2a1889465c91923317a4852ccbcbdbe6d480
