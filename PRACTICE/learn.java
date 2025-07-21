@@ -22,10 +22,27 @@
 //     }
 // }
 
-public class learn {
+// public class learn {
 
+//     public static void main(String[] args) {
+//         float n=2.0f;
+//         System.out.println(n);
+//     }
+// }
+
+public class learn {
     public static void main(String[] args) {
-        float n=2.0f;
-        System.out.println(n);
+        byte number1=1;
+        int number2=5;
+        float number3=80.5f;
+        double number4=105.09;
+        char letter='N';
+        String name ="NAIDU";
+        System.out.println(number2+number3);
+        System.out.println(number2+" "+letter); 
+        System.out.println(name+" "+number1);
+        System.out.println(name+" "+number2);
+        System.out.println(name+" "+number3);
+        System.out.println(name+" "+number4);
     }
 }
