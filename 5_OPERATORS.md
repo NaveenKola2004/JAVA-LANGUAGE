@@ -1,4 +1,4 @@
-# Java Operators Explained
+# Java Operators
 
 Java provides a rich set of operators to perform operations on variables and values. These are categorized as:
 
