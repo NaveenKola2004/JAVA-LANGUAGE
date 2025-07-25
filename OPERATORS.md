@@ -270,6 +270,28 @@ a = 10;
 System.out.println(a); // 10
 ```
 
+
+## 3 . 
+
+3. Ternary Operator
+The ternary operator is a shorthand for if-else.
+
+>> Syntax:
+
+```java
+
+condition ? expression_if_true : expression_if_false;
+
+```
+
+>> Example:
+```java
+int a = 10, b = 20;
+int max = (a > b) ? a : b;
+System.out.println("Max: " + max); // Output: Max: 20
+It's called ternary because it involves three operands.
+```
+
 <details>
 <summary>👉SUMMARY TABLES OF ALL OPERATORS</summary>
 
@@ -356,7 +378,7 @@ This file gives you a **quick reference** to all types of Java operators with si
 
 ---
 
-## 🔹 7. Ternary Operator
+## Ternary Operator
 
 | Operator | Description              | Example                     |
 |----------|--------------------------|-----------------------------|
