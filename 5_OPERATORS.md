@@ -271,9 +271,8 @@ System.out.println(a); // 10
 ```
 
 
-## 3 . 
 
-3. Ternary Operator
+# 3. Ternary Operator
 The ternary operator is a shorthand for if-else.
 
 >> Syntax:
