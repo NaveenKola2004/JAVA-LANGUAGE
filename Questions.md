@@ -862,3 +862,179 @@ public class polymorphism {
 ```
 </details>
 
+
+
+# 17 Check the whether the array Or list is sorted or not
+
+<details>
+
+<summary>Code</summary>
+
+```java
+
+import java.util.*;
+
+public class polymorphism {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        
+        int[] arr=new int[n];
+
+        for (int i=0;i<n;i++){
+            arr[i]=sc.nextInt();
+        }
+
+        boolean asc=true;
+        boolean desc=true;
+        for (int i=1;i<arr.length;i++){
+            if(arr[i]>arr[i-1]) desc=false;
+            if(arr[i]<arr[i-1])   asc=false;
+        }
+        if(asc){
+            System.out.println("sorted");
+        }
+        else if(desc){
+            System.out.println("sorted");
+        }
+        else{
+            System.out.println("not sorted ");
+        }
+    }
+}
+
+```
+
+# python
+
+```python
+
+l=[]
+n=int(input())
+for i in range(1,n+1):
+    data=int(input())
+    l.append(data)
+asc=True
+desc=True
+for i in range(1,n):
+    if(l[i]>l[i-1]):
+        desc=False
+    if(l[i]<l[i-1]):
+        asc=False
+if desc or asc :
+    print("sorted")
+else:
+    print("not sorted")
+
+```
+
+
+</details>
+
+
+# 18 String is palindrome or not
+
+<details>
+
+<summary>CODE</summary>
+
+```python
+
+def palindrome(word):
+    sample=""
+    for i in word:
+        sample=i+sample
+    return sample
+word=input("Enter the word to check the palindrome : ")
+
+if(word==palindrome(word)):
+    print("yes")
+else:
+    print("no")
+    
+```
+
+# JAVA
+
+```java
+
+import java.util.*;
+public class solution {
+public static void polindrom(String name){
+    String sample="";
+    for (int i=0;i<name.length() ;i++){
+        char s=name.charAt(i);
+        sample=s+sample;
+    }
+    if(name.equals(sample)){
+        System.out.println("yes");
+    }
+    else{
+    System.out.println("NO");
+    }
+}
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        String word=sc.next();
+        polindrom(word);
+    }
+}
+
+```
+
+</details>
+
+# 19 COUNT OF THE THE VOWELS AND CONSONENTS IN THE STRING 
+
+<details>
+
+<summary>CODE</summary>
+
+```java
+
+import java.util.*;
+public class solution {
+    public static void Count_vowel_conso(String word){
+        int countvo=0;
+        int countconso=0;
+        for(int i=0;i<word.length();i++){
+            char k=word.charAt(i);
+            if(k=='a'||k=='e'||k=='i'||k=='o'||k=='u'){
+                countvo+=1;
+            }
+            else{
+                countconso+=1;
+            }
+        }
+        System.out.println("Count of vowels : "+countvo+"\n"+"Count of consonenets : "+countconso);
+    }
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        String word=sc.nextLine();
+        Count_vowel_conso(word);
+    }
+}
+
+```
+
+# Python
+
+```python
+
+def count_of_vowels(word):
+    vocount=0
+    concount=0
+    for i in word:
+        if(i=='a'or i=='e'or i=='i'or i=='o'or i=='u'):
+            vocount+=1
+        else:
+            concount+=1
+    return ("vowelcount : ", vocount),("consonent count :", concount)
+word=input()
+print(count_of_vowels(word))
+
+```
+</details>
+
