@@ -203,3 +203,42 @@ class polymorphism implements parent1,parent2
 - Thread(Runnable)
 - Thread(String,Runnable)
 
+
+```java
+
+public class polymorphism extends Thread {
+public void run(){
+    System.out.println("hii   "+polymorphism.currentThread().getId());
+    System.out.println("hello "+polymorphism.currentThread().getId());
+    System.out.println("<>    "+polymorphism.currentThread().getId());
+}
+    public static void main(String[] args) {
+        polymorphism m1=new polymorphism();
+        m1.start();
+        try{
+            m1.join();
+        }
+        catch(Exception e){
+            System.out.println(e);
+        }
+        polymorphism m2=new polymorphism();
+        m2.start();
+        try{
+            m2.join();
+        }
+        catch(Exception e){
+            System.out.println(e);
+        }
+        polymorphism m3=new polymorphism();
+        m3.start();
+        try{
+            m3.join();
+        }
+        catch(Exception e){
+            System.out.println(e);
+        }
+    }
+}
+
+```
+

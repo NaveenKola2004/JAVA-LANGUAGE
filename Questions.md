@@ -771,3 +771,94 @@ public static int reverse(int number){ // reverse number
 }
 ```
 </details>
+
+
+
+# 15 WITHOUT USING THE INBUILT FUCTION GENERATE a ->A
+
+- R -> r
+- a -> A
+- 65 ASCI and 97 
+- don't use the inbult function and the +,- or if else and variables also
+
+
+<details>
+<summary>ANSWER</summary>
+
+```java
+import java.util.Scanner;
+public class polymorphism {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println((char)((sc.next().charAt(0))^32));
+    }
+}
+
+```
+</details>
+
+<details>
+<summary>CODE</summary>
+
+```python
+
+def armstrong(n):
+    l=str(n)
+    store=0
+    while (n>0):
+        d=n%10
+        data=d**len(l)
+        store=store+data
+        n=n//10
+    return store
+n=int(input())
+if(n==armstrong(n)):
+    print("yes")
+else:
+    print("No")
+
+```
+</details>
+
+
+# 16 changing the upper to lower case only the vowels
+
+- Test case 1
+ - Ab -> ab
+- Test case 2
+  - AEIOU -> aeiou
+- Test case 3
+  - Hello world! -> HEllO wOrld!
+
+
+<details>
+
+<summary> Code </summary>
+
+```java
+
+import java.util.*;;
+public class polymorphism {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        String c=sc.nextLine();
+        String f="";
+        for (int i=0;i<c.length();i++){
+            char k=c.charAt(i);
+            if(k == 'a' || k=='e'||k=='o'||k=='i'||k=='u'){
+                   f=f+((char)(k^32));
+            }
+            else{
+                f=f+k;
+            }
+        }
+        System.out.println(f);
+        sc.close();
+    }
+}
+
+```
+</details>
+
