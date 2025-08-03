@@ -1038,3 +1038,154 @@ print(count_of_vowels(word))
 ```
 </details>
 
+### 3/8/25
+
+# 20 Example String is immutable 
+print the string "abracadabra" -> abrackdabra
+<details>
+<summary>CODE</summary>
+
+# python
+
+```python 
+
+def Strin(name,pos,chr):
+    l=list(name)
+    l[pos]=chr
+    string="".join(l)
+    print(string)
+Strin("abracadabra",5,"k")
+
+```
+
+</details>
+
+
+# 21 PRINT THE SECOND HEIGHEST NUMBER IN A LIST 
+
+<details>
+
+<summary>CODE</summary>
+
+```python
+
+def second(n):
+    a=[]
+    for i in range(1,n+1):
+        data=int(input())
+        a.append(data)
+    for i in range (n-1):
+        for j in range(0,n-i-1):
+            if(a[j]>a[j+1]):
+                temp=a[j]
+                a[j]=a[j+1]
+                a[j+1]=temp
+    if(n>=2):
+        if (a[n-1]==a[n-2]):
+            print(a[n-3])
+        else:
+            print(a[n-2])
+k=int(input())
+second(k)
+
+```
+
+</details>
+
+# 22 print the grade of students by order 
+
+### Explanation
+
+- Given the names and grades for each student in a class of  students, store them in a nested list and print the name(s) of any student(s) having the second lowest grade.
+
+Note: If there are multiple students with the second lowest grade, order their names alphabetically and print each name on a new line.
+
+Example
+
+The ordered list of scores is , so the second lowest score is . There are two students with that score: . Ordered alphabetically, the names are printed as:
+
+alpha
+beta
+Input Format
+
+The first line contains an integer, , the number of students.
+The  subsequent lines describe each student over  lines.
+- The first line contains a student's name.
+- The second line contains their grade.
+
+Constraints
+
+There will always be one or more students having the second lowest grade.
+Output Format
+
+Print the name(s) of any student(s) having the second lowest grade in. If there are multiple students, order their names alphabetically and print each one on a new line.
+
+Sample Input 0
+
+5
+Harry
+37.21
+Berry
+37.21
+Tina
+37.2
+Akriti
+41
+Harsh
+39
+Sample Output 0
+
+Berry
+Harry
+Explanation 0
+
+There are  students in this class whose names and grades are assembled to build the following list:
+
+python students = [['Harry', 37.21], ['Berry', 37.21], ['Tina', 37.2], ['Akriti', 41], ['Harsh', 39]]
+
+The lowest grade of  belongs to Tina. The second lowest grade of  belongs to both Harry and Berry, so we order their names alphabetically and print each name on a new line.
+
+<details>
+
+<summary> 👉👉👉Code</summary>
+
+```python
+# this code has out of 10 test cases it is faill the 2 test cases
+l=[]
+n=int(input())
+for i in range(1,n+1):
+    name=input()
+    grade=float(input())
+    l.append([grade,name])
+g=[]
+for i in range(0,len(l)):
+    for j in range(0,1):
+        g.append(l[i][j])
+for i in range(n-1):
+    for j in range(n-i-1):
+        if(g[j]<g[j+1]):
+            tepm=g[j]
+            g[j]=g[j+1] 
+            g[j+1]=tepm
+k=[]
+if(n>=2):
+    if(g[n-2]==g[n-3]):
+        k.append(g[n-2])
+        k.append(g[n-3])
+    else:
+        k.append(g[n-2])
+
+sec=k[0]
+name=[]
+for student in l:
+    if student[0]==sec:
+        name.append(student[1])
+
+
+name.sort()
+for i in name:
+    print(i)
+
+```
+
+</detials>
