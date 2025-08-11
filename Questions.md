@@ -1188,7 +1188,7 @@ for i in name:
 
 ```
 
-</detials>
+</details>
 
 # 23 check the missing number in an array (1 to n)
 
