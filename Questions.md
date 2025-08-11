@@ -1189,3 +1189,107 @@ for i in name:
 ```
 
 </detials>
+
+# 23 check the missing number in an array (1 to n)
+
+<details>
+<Summary>CODE</summary>
+
+
+```java
+
+
+
+```
+
+```python
+
+
+```
+
+</summary>
+
+
+# 24 DENOMINATION
+
+<details>
+<summary>CODE</summary>
+
+```java
+
+import java.util.*;
+public class Main{
+    public static void main(String args[]){
+        Scanner sc=new Scanner(System.in);
+        int total=sc.nextInt();
+        int cost=sc.nextInt();
+        int change=total-cost;
+        
+        int n=sc.nextInt();
+        int[] denomination=new int[n];
+        for (int i=0;i<n;i++){
+            denomination[i]=sc.nextInt();
+        }
+        for (int denom :denomination){
+            while(change>=denom){
+                System.out.println(denom);
+                change-=denom;
+            }
+        }
+    }
+}
+
+```
+
+</details>
+
+# 25 finding the how much liters of water we can store in this
+
+#### smaple
+- 3,9,1,4,8
+- so in this largest second number will be subtract with the other lowest numbers
+
+```java 
+5
+9 8 2 1 7
+14
+```
+
+<details>
+<summary>CODE</summary>
+
+```java
+
+
+import java.util.*;
+
+public class Main{
+    public static void main (String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int[] a=new int[n];
+        
+        for (int i=0;i<n;i++){
+            a[i]=sc.nextInt();
+        }
+        for(int i=0;i<n-1;i++){
+            for (int j=0;j<n-1-i;j++){
+                if(a[j]>a[j+1]){
+                    int temp=a[j];
+                    a[j]=a[j+1];
+                    a[j+1]=temp;
+                }
+            }
+        }
+       int max2=a[n-2];
+       int sum=0;
+       for(int i=0;i<a.length-2;i++){
+           sum+=max2-a[i];
+       }
+           System.out.println(sum);
+    }
+}
+
+```
+
+</details>
