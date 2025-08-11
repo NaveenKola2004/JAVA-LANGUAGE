@@ -1295,7 +1295,7 @@ public class Main{
 </details>
 
 
-# insert the value in the pirticular index 
+# 26 insert the value in the pirticular index 
 
 <details>
 <summary>code</summary>
