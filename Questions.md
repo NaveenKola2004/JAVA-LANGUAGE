@@ -1330,3 +1330,97 @@ public class Main{
 
 ```
 </details>
+
+
+# 27 FACTORIAL TIME COMPLEXCITY 
+
+<details>
+
+<summary> CODE </summary>
+
+```java 
+
+
+```
+
+</details>
+
+# 27 REMOVE THE PIRTICULA INDEX IN ARRAY
+
+<details>
+
+<summary>CODE</summary>
+
+```java
+
+import java.util.*;
+
+public class Main{
+    public static void main (String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int[] a=new int[n];
+        
+        for (int i=0;i<n;i++){
+            a[i]=sc.nextInt();
+        }
+        
+        int index=sc.nextInt();
+        
+        for(int i=index;i<n-1;i++){
+            a[i]=a[i+1];
+        }
+        n--;
+        for(int i=0;i<n;i++){
+            System.out.print(a[i]);
+        }
+    }
+}
+
+```
+</details>
+
+# 28 LINEAR SEARCH
+
+</details>
+
+<summary>CODE</summary>
+
+```java
+
+import java.util.*;
+
+public class Main{
+    public static int linearsearch(int[] ab,int tar){
+        for(int i=0;i<ab.length;i++){
+            if(ab[i]==tar){
+                return i;
+            }
+        }
+        return -1;
+    }
+    public static void main (String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int[] a=new int[n];
+        
+        for (int i=0;i<n;i++){
+            a[i]=sc.nextInt();
+        }
+        
+        int target=sc.nextInt();
+        
+        int index=linearsearch(a,target);
+        if(index!=-1){
+            System.out.println("found");
+            
+        }
+        else{
+            System.out.println("not found");
+        }
+    }
+}
+
+```
+
+</details>
