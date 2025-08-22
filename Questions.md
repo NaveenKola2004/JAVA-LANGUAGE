@@ -1382,7 +1382,7 @@ public class Main{
 
 # 28 LINEAR SEARCH
 
-</details>
+<details>
 
 <summary>CODE</summary>
 
@@ -1420,6 +1420,204 @@ public class Main{
         }
     }
 }
+
+```
+</details>
+
+# 29 Binary search
+
+<details>
+
+<summary>Code</summary>
+
+```java
+
+import java.util.*;
+public class CODE_PRACTICE {
+    public static int Binary(int[] arr,int num){
+        int low=0,high=arr.length-1;
+
+        while (low<=high) {
+            int mid=(low+high)/2;
+
+            if(arr[mid]==num){
+                return mid;
+            }
+            else if(arr[mid]<num){
+                low=mid+1;
+            }
+            else{
+                high=mid-1;
+            }
+        }
+        return -1;
+    }
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int[] array=new int[n];
+
+        for(int i=0;i<n;i++){
+            array[i]=sc.nextInt();
+        }
+
+        for (int i=0;i<n-1;i++){
+            for (int j=0;j<n-i-1;j++){
+                if(array[j]>array[j+1]){
+                    int temp=array[j];
+                    array[j]=array[j+1];
+                    array[j+1]=temp;
+                }
+            }
+        }
+        int find=sc.nextInt();
+        int index=Binary(array,find);
+
+        if(index==-1){
+            System.out.println("not found");
+        }
+        else{
+            System.out.println("find "+(index+1));
+        }
+        sc.close();
+    }
+}
+
+
+```
+
+</details>
+
+
+
+# 30 to fid the pirticular number and replace with another number 
+
+<details>
+
+<summary>CODE</summary>
+
+```java
+
+import java.util.*;
+
+public class CODE_PRACTICE {
+
+    public static void Binary(int[] arr,int num,int change){
+        int low=0,high=arr.length-1;
+        while (low<=high) {
+            int mid=(low+high)/2;
+
+            if(arr[mid]==num){
+                arr[mid]=change;
+                for(int i=0;i<arr.length;i++){
+                    System.out.print(arr[i]+" ");
+                }
+            }
+            else if(arr[mid]<num){
+                low=mid+1;
+            }
+            else{
+                high=mid-1;
+            }
+        }
+    }
+
+    public static void main(String arg[]){
+
+        Scanner sc=new Scanner(System.in);
+
+        int n=sc.nextInt();
+
+        int[] array=new int[n];
+
+        for (int i=0;i<n;i++){
+            array[i]=sc.nextInt();
+        }
+
+        for(int i=0;i<n-1;i++){
+            for(int j=0;j<n-i-1;j++){
+                if(array[j]>array[j+1]){
+                    int temp=array[j];
+                    array[j]=array[j+1];
+                    array[j+1]=temp;
+                }
+            }
+        }
+        int find=sc.nextInt();
+        int replace=sc.nextInt();
+        Binary(array,find,replace);
+        sc.close();
+    }
+}
+
+```
+
+</details>
+
+
+
+
+# some importent programs
+
+<details>
+
+<summary>Codes</summary>
+
+
+```java
+
+  // find both min and max number 
+public class CODE_PRACTICE {
+
+    public static void main(String[] args) {
+        
+        int[] arr={7,1,4,5,2,9};
+        
+        for(int i=0;i<arr.length-1;i++){
+            for(int j=0;j<arr.length-1-i;j++){
+                if(arr[j]<arr[j+1]){
+                    int temp=arr[j];
+                    arr[j]=arr[j+1];
+                    arr[j+1]=temp;
+                }
+            }
+        }
+        for(int val:arr){
+            System.out.print(val+" ");
+            break;
+        }
+    }
+}
+
+
+
+// reverse an array by using the swap technique 
+
+public class CODE_PRACTICE {
+
+    public static void main(String[] args) {
+        int[] arr={89,1,2,4,5,7,8};
+
+        int left=0,right=arr.length-1;
+
+        while(left<right){
+            int temp=arr[left];
+            arr[left]=arr[right];
+            arr[right]=temp;
+
+            left++;
+            right--;
+        }
+
+        for(int val:arr){
+            System.out.print(val+" ");
+        }
+    }
+}
+
+
+
 
 ```
 
