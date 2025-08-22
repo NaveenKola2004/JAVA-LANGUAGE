@@ -1618,7 +1618,50 @@ public class CODE_PRACTICE {
 
 
 
+// print the missing numbers in a given number 
 
+n=int(input())
+a=[]
+for i in range(0,n):
+    k=int(input())
+    a.append(k)
+
+for i in range(0,n-1):
+    for j in range(0,n-1-i):
+        if(a[j]>a[j+1]):
+            temp=a[j]
+            a[j]=a[j+1]
+            a[j+1]=temp
+max=a[len(a)-1]
+min=a[0]
+for i in range(min,max):
+    if(i not in a):
+        print(i,end=" ")
+
+
+// armstrong number 
+
+def armstrong(n):
+    leng=len(str(n))
+    arm=0
+    while(n>0):
+        digit=n%10
+        arm+=digit**leng
+        n//=10
+    return arm
+
+num=int(input())
+retur=armstrong(num)
+if(retur==num):
+    print("yes")
+else:
+    print("no")
+
+    //optimized
+
+num=int(input())
+
+print("yes" if num==sum(int(d)**len(str(num)) for d in str(num)) else "no")
 ```
 
 </details>
