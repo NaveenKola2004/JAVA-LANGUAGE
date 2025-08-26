@@ -1,0 +1,272 @@
+#  Reverse number
+
+```java
+import java.util.*;
+public class CODE_PRACTICE {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+
+        int num=sc.nextInt();
+        int rev=0,digit;
+        while(num>0){
+           digit=num%10;
+           rev=(rev*10)+digit;
+           num=num/10;
+        }
+        System.out.println(rev);
+    }
+}
+```
+
+# Polindrome number 
+
+```java
+
+import java.util.*;
+public class CODE_PRACTICE {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+
+        int num=sc.nextInt();
+        int temp=num;
+        int rev=0,digit;
+        while(num>0){
+           digit=num%10;
+           rev=(rev*10)+digit;
+           num=num/10;
+        }
+        if(temp==rev){
+            System.out.println("polindrome number");
+        }
+        else{
+            System.out.println("Not polindrome");
+        }
+    }
+}
+
+```
+
+# Armstrong
+
+```java
+
+import java.util.*;
+public class CODE_PRACTICE {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+
+        int num=sc.nextInt();
+        int temp=num;
+        int store=0,digit,data;
+        int len=(int)(Math.log10(temp)+1);
+        while (num>0) {
+            digit=num%10;
+            data=(int)(Math.pow(digit, len));
+            store+=data;
+            num/=10;
+        }
+        
+        if(store==temp){
+            System.out.println("Armstrong number");
+        }
+        else{
+            System.out.println("not");
+        }
+    }
+}
+
+```
+
+
+# print armstrong numbers in range 
+
+```java
+
+import java.util.*;
+public class CODE_PRACTICE {
+
+    public static int Armstrong(int n){
+        int store=0,digit;
+        int len=(int)(Math.log10(n)+1);
+        while(n>0){
+            digit=n%10;
+            store=store+((int)Math.pow(digit,len));
+            n=n/10;
+        }
+        return store;
+    }
+    public static void main(String args[]){
+        Scanner sc=new Scanner(System.in);
+
+        int number=sc.nextInt();
+
+        for(int i=11;i<=number;i++){
+            int temp=i;
+            int check=(Armstrong(i));
+            if(temp==check){
+                System.out.println(check);
+            }
+        }
+        sc.close();
+    }
+}
+
+```
+
+# Generate Fibonacci series
+
+
+```java
+
+import java.util.*;
+
+public class CODE_PRACTICE {
+    public static void feb(int n){
+        int a=0,b=1;
+        System.out.print("feb "+a+" "+b);
+        for(int i=2;i<n;i++){
+            int c=a+b;
+            System.out.print(" "+c);
+            a=b;
+            b=c;
+        }
+    }
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        feb(n);
+        sc.close();
+    }
+}
+
+```
+
+# Calculate factorial (loop & recursion)
+
+```java
+
+import java.util.*;
+public class CODE_PRACTICE {
+    public static int fact(int n){
+
+        if(n==0)
+        {
+            return 1;
+        }
+        else{
+            return n*fact(n-1);
+        }
+    }
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int num=sc.nextInt();
+        System.out.println(fact(num));
+        sc.close();
+    }
+}
+
+```
+
+# Check if number is prime
+
+
+```java
+
+import java.util.*;
+
+public class CODE_PRACTICE {
+
+    public static void main(String args[]){
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        boolean isprime=true;
+        for(int i=2;i<=Math.sqrt(n);i++){
+            if(n%i==0){
+                isprime=false;
+                break;
+            }
+        }
+        if(isprime){
+            System.out.println(n+" is prime number");
+        }
+        else{
+            System.out.println(n+" not prime number");
+        }
+        sc.close();
+    }
+}
+
+```
+
+# Count number of digits
+
+```java
+
+import java.util.Scanner;
+
+public class CODE_PRACTICE {
+public static int count_digits(int n){
+    int count=0;
+    while(n>0){
+        int digit=n%10;
+        count++;
+        n=n/10;
+    }
+    return count;
+}
+
+public static void main(String args[]){
+    Scanner sc=new Scanner(System.in);
+    int n=sc.nextInt();
+System.out.println(count_digits(n));
+sc.close();
+}
+}
+
+```
+
+# Sum of digits of a number
+
+
+```java
+
+import java.util.*;
+public class CODE_PRACTICE {
+    public static int Sum_of_num(int n){
+        int sum=0;
+        while(n>0){
+            int digit=n%10;
+            sum+=digit;
+            n/=10;
+        }
+        return sum;
+    }
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        System.out.println(Sum_of_num(n));
+    }
+}
+
+```
+
+#  Swap two numbers (temp & no temp)
+
+```java
+
+import java.util.*;
+public class CODE_PRACTICE {
+    public static void main(String[] args) {
+         Scanner sc=new Scanner(System.in);
+         int num1=sc.nextInt(),num2=sc.nextInt();
+         int temp=num1;
+         num1=num2;
+         num2=temp;
+
+         System.out.println(num1+" "+num2);
+    }
+}
+
+```
+
+# 
