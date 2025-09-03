@@ -639,3 +639,157 @@ public static void main(String[] args) {
 
 ```
 
+
+
+> # ARRAY
+
+# Find largest and smallest in array
+
+```java
+
+import java.util.*;
+public class CODE_PRACTICE {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int[] a=new int[n];
+
+        for(int i=0;i<n;i++){
+            a[i]=sc.nextInt();
+        }
+
+        for(int i=0;i<n-1;i++){
+            for(int j=0;j<n-i-1;j++){
+                if(a[j]>a[j+1]){
+                    int temp=a[j+1];
+                    a[j+1]=a[j];
+                    a[j]=temp;
+                }
+            }
+        }
+        System.out.println(a[n-1]+" is largest number");
+        System.out.print(a[n-n]+" is smallest number");
+    }
+}
+
+```
+
+# Sum of all array elements
+
+```java
+
+import java.util.*;
+public class CODE_PRACTICE {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int[] a=new int[n];
+
+        for(int i=0;i<n;i++){
+            a[i]=sc.nextInt();
+        }
+
+        int sum=0;
+        for (int i=0;i<n;i++){
+            sum+=a[i];
+        }
+        System.out.println(sum);
+        sc.close();
+    }
+}
+
+```
+
+# Find second largest number
+
+```java
+
+import java.util.*;
+public class CODE_PRACTICE {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int[] a=new int[n];
+
+        for(int i=0;i<n;i++){
+            a[i]=sc.nextInt();
+        }
+
+        for (int i=0;i<n-1;i++){
+            for(int j=0;j<n-i-1;j++){
+                if(a[j]>a[j+1]){
+                    int temp=a[j+1];
+                    a[j+1]=a[j];
+                    a[j]=temp;
+                }
+            }
+        }
+        System.out.println(a[n-2]);
+        sc.close();
+    }
+}
+
+```
+
+# Sort array (Bubble, Insertion, Selection)
+
+```java
+
+import java.util.*;
+public class CODE_PRACTICE {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int[] a=new int[n];
+
+        for(int i=0;i<n;i++){
+            a[i]=sc.nextInt();
+        }
+
+        for (int i=0;i<n-1;i++){
+            for(int j=0;j<n-i-1;j++){
+                if(a[j]>a[j+1]){
+                    int temp=a[j+1];
+                    a[j+1]=a[j];
+                    a[j]=temp;
+                }
+            }
+        }
+        for (int i=0;i<n;i++){
+            System.out.println(a[i]);
+        }
+        sc.close();
+    }
+}
+
+```
+# Count even and odd numbers
+
+```java
+
+import java.util.*;
+public class CODE_PRACTICE {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int[] a=new int[n];
+
+        for(int i=0;i<n;i++){
+            a[i]=sc.nextInt();
+        }
+
+        int even=0,odd=0;
+        for(int i=0;i<n;i++){
+            if((a[i] & 1)==0){
+                even++;
+            }
+            else{
+                odd++;
+            }
+        }
+        System.out.println(even +" even numbers \n"+odd+" odd numbers");
+        sc.close();
+    }
+}
+
+```
