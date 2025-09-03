@@ -292,7 +292,18 @@ public class CODE_PRACTICE {
 
 ```java
 
+public class CODE_PRACTICE {
 
+    public static void main(String[] args) {
+        int a=5;
+        int b=6;
+
+       a=a^b;
+       b=a^b;
+       a=a^b;
+       System.out.println(a+" "+b);
+    }
+}
 
 ```
 
@@ -370,6 +381,261 @@ public class CODE_PRACTICE {
 
 ```
 
+# Right angled triangle
 
+### condition  if (j<=i)
 
+```java
+
+public class CODE_PRACTICE {
+
+    public static void main(String[] args) {
+        int n=5;
+        for(int i=1;i<=n;i++){
+            for(int j=1,k=n;j<=n && k>=1;j++,k--){
+                if(j<=i){
+                    System.out.print("* ");
+                }
+                else{
+                    System.out.print("  ");
+                }
+            }
+            System.out.println();
+        }
+    }
+}
+
+// OUTPUT
+
+*         
+* *       
+* * *     
+* * * *   
+* * * * *
+
+```
+
+# Flipped Right angled triangle
+### Condition if (j<=n-i+1)
+
+```java
+
+public class CODE_PRACTICE {
+
+    public static void main(String[] args) {
+        int n=5;
+        for(int i=1;i<=n;i++){
+            for(int j=1,k=n;j<=n && k>=1;j++,k--){
+                if(j<=n-i+1){
+                    System.out.print("* ");
+                }
+                else{
+                    System.out.print("  ");
+                }
+            }
+            System.out.println();
+        }
+    }
+}
+
+// OUTPUT
+
+* * * * * 
+* * * *   
+* * *     
+* *       
+*
+
+```
+
+# Left angled Triangle
+
+### if (j>=n-i+1)
+
+```java
+
+public class CODE_PRACTICE {
+
+    public static void main(String[] args) {
+        int n=5;
+        for(int i=1;i<=n;i++){
+            for(int j=1,k=n;j<=n && k>=1;j++,k--){
+                if(j>=n-i+1){
+                    System.out.print("* ");
+                }
+                else{
+                    System.out.print("  ");
+                }
+            }
+            System.out.println();
+        }
+    }
+}
+
+// OUTPUT
+
+        * 
+      * * 
+    * * * 
+  * * * * 
+* * * * * 
+
+```
+
+# Flipped Left angled triangle
+### if(j>=i)
+
+```java
+
+public class CODE_PRACTICE {
+
+    public static void main(String[] args) {
+        int n=5;
+        for(int i=1;i<=n;i++){
+            for(int j=1,k=n;j<=n && k>=1;j++,k--){
+                if(j>=i){
+                    System.out.print("* ");
+                }
+                else{
+                    System.out.print("  ");
+                }
+            }
+            System.out.println();
+        }
+    }
+}
+
+// OUTPUT
+
+* * * * * 
+  * * * *
+    * * *
+      * *
+        *
+
+```
+
+# Triangle (pyramid) 
+### inner loop (for (int j=1;j<=2*n-1;j++))
+### if(j>=n-i+1 && j<=n+i-1)
+
+```java
+
+public class CODE_PRACTICE {
+
+    public static void main(String[] args) {
+        int n=5;
+        for(int i=1;i<=n;i++){
+            for(int j=1;j<= 2 * n-1;j++){
+                if(j>=n-i+1 && j<=n+i-1){
+                    System.out.print("* ");
+                }
+                else{
+                    System.out.print("  ");
+                }
+            }
+            System.out.println();
+        }
+    }
+}
+
+// OUTPUT
+
+        *
+      * * *
+    * * * * *
+  * * * * * * *
+* * * * * * * * *
+
+```
+
+# Flipped Triangle
+### Inner loop ((for int j=1;j<=2*n-1;j++))
+### condition if(j>=i && j<2*n-i)
+
+```java
+
+public class CODE_PRACTICE {
+public static void main(String[] args) {
+        int n=5;
+        for(int i=1;i<=n;i++){
+            for(int j=1;j<= 2 * n -1 ;j++){
+                if(j>=i && j<=2*n-i){
+                    System.out.print("* ");
+                }
+                else{
+                    System.out.print("  ");
+                }
+            }
+            System.out.println();
+        }
+    }
+}
+
+// OUTPUT
+
+* * * * * * * * * 
+  * * * * * * *
+    * * * * *
+      * * *
+        *
+
+```
+
+# Floyd’s triangle
+# inner loop ((for int j=1;j<=i;j++))
+
+```java
+
+public class CODE_PRACTICE {
+public static void main(String[] args) {
+        int n=5;
+        int num=1;
+        for(int i=1;i<=n;i++){
+            for(int j=1;j<=i;j++){
+                System.out.print(num+" ");
+                num++;
+            }
+            System.out.println();
+        }
+    }
+}
+
+// OUTPUT
+
+1 
+2 3 
+4 5 6 
+7 8 9 10 
+11 12 13 14 15 
+
+```
+
+# Flipped Floyd’s triangle
+# outer loop ((for int i=n;i>=1;i--))
+
+```java
+
+public class CODE_PRACTICE {
+public static void main(String[] args) {
+        int n=5;
+        int num=1;
+        for(int i=n;i>=1;i--){
+            for(int j=1;j<=i;j++){
+                System.out.print(num+" ");
+                num++;
+            }
+            System.out.println();
+        }
+    }
+}
+// OUTPUT
+
+1 2 3 4 5 
+6 7 8 9 
+10 11 12 
+13 14 
+15 
+
+```
 
