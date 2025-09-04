@@ -793,3 +793,155 @@ public class CODE_PRACTICE {
 }
 
 ```
+
+
+# FREQUENCY ARRAY
+### Basic way to create the Frequency
+```java
+
+public class practice {
+
+    public static void main(String[] args) {
+        int[] a={0,1,2,2,3,4,5,6,7};
+        int[] c=new int[100];
+
+        for(int i=0;i<a.length;i++){
+            c[a[i]]++;
+        }
+        for(int i=0;i<c.length;i++){
+            if(c[i]==1){
+                System.out.print(i);
+            }
+        }
+    }
+}
+
+```
+
+# 1. Unique elements from numbers
+
+### Condition if(c[i]==1)
+
+```java
+
+public class practice {
+
+    public static void main(String[] args) {
+        int[] a={1,1,2,2,3,4,5,6,6};
+        int[] c=new int[100];
+
+        for(int i=0;i<a.length;i++){
+            c[a[i]]++;
+        }
+        for(int i=0;i<c.length;i++){
+            if(c[i]==1){
+                System.out.print(i+" ");
+            }
+        }
+    }
+
+}
+
+```
+
+# Duplicate elements
+### Condition if(c[i]>1)
+
+```java
+
+public class practice {
+
+    public static void main(String[] args) {
+        int[] a={1,1,2,2,3,4,5,6,6};
+        int[] c=new int[100];
+
+        for(int i=0;i<a.length;i++){
+            c[a[i]]++;
+        }
+        for(int i=0;i<c.length;i++){
+            if(c[i]>1){
+                System.out.print(i+" ");
+            }
+        }
+    }
+}
+
+```
+
+# Missing elements (don’t appear at all)
+### Condition if(c[i]==0)
+
+```java
+
+public class practice {
+
+    public static void main(String[] args) {
+        int[] a={1,1,2,2,3,4,5,6,6};
+        int[] c=new int[100];
+
+        for(int i=0;i<a.length;i++){
+            c[a[i]]++;
+        }
+        for(int i=0;i<c.length;i++){
+            if(c[i]==0){
+                System.out.print(i+" ");
+            }
+        }
+    }
+}
+
+```
+
+# Elements appearing at most k times example k=2
+### condition id(c[i]>=2 && c[i]>0)
+
+```java
+
+public class practice {
+
+    public static void main(String[] args) {
+        int[] a={1,1,2,2,3,4,5,6,6};
+        int[] c=new int[100];
+
+        for(int i=0;i<a.length;i++){
+            c[a[i]]++;
+        }
+        for(int i=0;i<c.length;i++){
+            if(c[i]>=2 && c[i]>0){
+                System.out.print(i+" ");
+            }
+        }
+    }
+}
+
+```
+
+# Sorting numbers by occurrence
+### condition for(int freq=1;freq<=a.length;freq++)
+### condition if(c[i]==freq)
+### condition for(int k=0;k<freq;k++)
+
+```java
+
+public class practice {
+    public static void main(String[] args) {
+        int[] a={1,1,2,2,3,4,5,6,6};
+        int[] c=new int[100];
+        for(int i=0;i<a.length;i++){
+            c[a[i]]++;
+        }
+        for(int freq=1;freq<=a.length;freq++){
+            for(int i=0;i<c.length;i++){
+                if(c[i]==freq){
+                    for(int k=0;k<freq;k++)
+                    System.out.print(i+" ");
+                }
+            }
+        }
+    }
+}
+
+```
+
+# Sorting numbers ascending
+### 
