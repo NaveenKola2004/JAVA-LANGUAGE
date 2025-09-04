@@ -1,4 +1,4 @@
-# 🚀 TCS NQT One-Day Crash Formula Sheet
+# 🚀 TCS NQT Crash Formula Sheet
 
 ---
 
